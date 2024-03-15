@@ -1,0 +1,266 @@
+#header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 80px;
+    background-image: url(111210-ONZMUV-593.jpg);
+    background-position: top 60%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position:sticky;
+    top:0;
+    left: 0;
+
+}
+#body{
+    background-color:aliceblue;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding:0 20px;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size:16px ;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition:0.3s ease;
+    
+}
+#navbar li a:hover,#navbar li a.active{
+    color: red;
+    text-decoration: underline;
+
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background: red;
+    position: absolute;
+    bottom:-5px;
+    left: 20px;
+    
+}
+.emoji{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+    
+#hero{
+    background-image: url(111210-ONZMUV-593.jpg) ;
+    height:90vh;
+    width:100%;
+    background-size: cover;
+    background-position: bottom 45% left 30% ;
+    padding:0 80px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2000px;
+}    
+
+#hero h4{
+    padding-bottom: 15px;
+    color:white;
+}
+#hero h2{
+    color: white;
+}
+#hero h1{
+    color: white;
+}
+#p{
+    color:white;
+}
+#hero button{
+    
+    background-color:lightgray;
+    color:#088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+#feature{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #cce7d0;
+    margin: 15px 0;
+    height:150px;
+
+   
+    
+}
+#feature .fe-box:hover{
+    box-shadow: 50px 50px 54px rgba(70,62,221,0.1);
+}
+#feature .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+    text-align: center;
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+#product1{
+    text-align: center;
+    width: 430%;
+    background-image: url(pexels-fabien-burgue-5629958.jpg) ;
+}
+#product1 .pro{
+    width:23%;
+    min-width: 250px;
+    padding:10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    color: #088178;
+    
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+    text-decoration-color: #088178;
+}
+#product1 .pro .des span{
+   
+    font-size: 12px;
+    
+
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color-scheme: Pink;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243,181,25);
+}
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;}
+    
+    #product1 .pro-2{
+        width:23%;
+        min-width: 250px;
+        padding:10px 12px;
+        border: 1px solid #cce7d0;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+        margin: 15px 0;
+        transition: 0.2s ease;
+        color: magenta;
+        
+    }
+    #product1 .pro-3{
+        width:23%;
+        min-width: 250px;
+        padding:10px 12px;
+        border: 1px solid #cce7d0;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+        margin: 15px 0;
+        transition: 0.2s ease;
+        color: orangered;
+        
+    }
+    #product1 .pro-4{
+        width:23%;
+        min-width: 250px;
+        padding:10px 12px;
+        border: 1px solid #cce7d0;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+        margin: 15px 0;
+        transition: 0.2s ease;
+        color: green;
+    }
+    #product1 .pro-5{
+        width:23%;
+        min-width: 250px;
+        padding:10px 12px;
+        border: 1px solid #cce7d0;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+        margin: 15px 0;
+        transition: 0.2s ease;
+        color: blue;
+    }
+    #product1 .pro-6{
+        width:23%;
+        min-width: 250px;
+        padding:10px 12px;
+        border: 1px solid #cce7d0;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+        margin: 15px 0;
+        transition: 0.2s ease;
+        color: goldenrod;
+        
+    }
+    @media (max-width:799px){
+        #navbar{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: fixed;
+            top: 0;
+            right: 0px;
+            height: 100vh;
+            width: 300px;
+            background-color: #E3E6F3;
+            box-shadow: 0px 40px 60px rgba(0,0,0,0.1);
+            padding: 80px 0 0 10px;
+            transition:0.3s
+        }
+    }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blending Pallete Gallery</title>
+    <style>
+        body {
+            background: black;
+            text-align: center;
+        }
+        h3{
+            color: red;
+        }
+        img{
+            max-height: 50%;
+            height: 400px;
+            width : 400px;
+        }
+        .lightbox{
+            display:none;
+            /* Overlay entire screen */
+            position: fixed;
+            top : 0;
+            left : 0;
+            right : 0;
+            bottom : 0;
+            /* Translucent background */
+            background-color: rgba(0,0,0,0.8);
+        }
+        /* Unhide the lightbox when it's the target */
+        .lightbox:target {
+            display: block;
+        }
+        .lightbox span{
+            /* Full width and height */
+            display : block;
+            width : 100%;
+            height : 100%;
+            /* Size and position background image */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size : contain;
+        }
+    </style>
+</head>
+<body>
+    <h3>Welcome to Blending Pallete Gallery</h3>
+    <a href="#img">
+        <img src="PHOTO-2023-11-29-16-00-54.jpg">
+    </a>
+    <a href="" class="lightbox" id="img">
+        <span style="background-image: url(PHOTO-2023-11-29-16-00-54.jpg);"></span>     
+    </a>
+
+    <a href="#img1">
+        <img src="PHOTO-2023-11-29-16-00-29.jpg">
+    </a>
+    <a href="" class="lightbox" id="img1">
+        <span style="background-image: url(PHOTO-2023-11-29-16-00-29.jpg);"></span>     
+    </a>
+    <a href="#img2">
+        <img src="IMG_7292.jpeg">
+    </a>
+    <a href="" class="lightbox" id="img2">
+        <span style="background-image: url(IMG_7292.jpeg);"></span>     
+    </a>
+    <a href="#img3">
+        <img src="IMG_7282.jpeg">
+    </a>
+    <a href="" class="lightbox" id="img3">
+        <span style="background-image: url(IMG_7282.jpeg);"></span>     
+    </a>
+
+    <a href="#img4">
+        <img src="9b2b616d-51d0-40ce-b5b1-dd4eafa47c05.jpg">
+    </a>
+    <a href="" class="lightbox" id="img4">
+        <span style="background-image: url(9b2b616d-51d0-40ce-b5b1-dd4eafa47c05.jpg);"></span> 
+
+    <a href="#img5">
+        <img src="111210-ONZMUV-593.jpg">
+    </a>
+    <a href="" class="lightbox" id="img5">
+        <span style="background-image: url(111210-ONZMUV-593.jpg);"></span> 
+
+    <a href="#img6">
+        <img src="3bdeeec8-b2f6-48ce-b4fb-164eb000830b.jpg">
+    </a>
+    <a href="" class="lightbox" id="img6">
+        <span style="background-image: url(3bdeeec8-b2f6-48ce-b4fb-164eb000830b.jpg);"></span>
+
+    <a href="#img7">
+        <img src="WhatsApp Image 2021-05-03 at 17.18.14.jpeg">
+    </a>
+    <a href="" class="lightbox" id="img7">
+        <span style="background-image: url(WhatsApp Image 2021-05-03 at 17.18.14.jpeg);"></span>
+
+    <a href="#img8">
+        <img src="WhatsApp Image 2021-05-05 at 14.17.52.jpeg">
+    </a>
+    <a href="" class="lightbox" id="img8">
+        <span style="background-image: url(WhatsApp Image 2021-05-05 at 14.17.52.jpeg);"></span>
+
+   
+</body>
+</html> 

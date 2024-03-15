@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PDF Joiner</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="pdfmerger.css">
+</head>
+<body>
+
+<main class="p-4 w-100 h-100 d-flex align-items-center justify-content-center">
+    <div class="container d-flex align-items-center justify-content-center flex-column gap-2">
+        <div class="row d-flex align-items-center justify-content-center w-75">
+            <div class="col-md-6 w-100 d-flex align-items-center justify-content-center">
+                <h1 class="text-center font-medium w-100">PDF Merger</h1>
+            </div>
+    </div>
+    <div class="w-100 h-100 md:p-2">
+        <div class="w-100 h-100 p-3" style="background-color: #7961f2;border-radius:10px;">
+  <div class="list-files flex-wrap container d-flex justify-content-center align-items-center flex-row w-100" style="background-color: #705adc; color: white; min-height: 250px; height: auto; padding-bottom: 20px; border-radius: 10px;">
+    <div class="no-files text-uppercase text-center">No PDF files added</div>
+  </div>
+</div>
+</div>
+  <div style="display:none">
+    <input type="file" id="pdf-file" accept="application/pdf" multiple="true">
+  </div>
+  <div class="center-btn text-center mt-3 d-flex align-items-center justify-content-center gap-2 flex-sm-row flex-column">
+    <button class="btn btn-join btn-lg" onclick="$('#pdf-file').click()">Add PDF</button>
+    <button class="btn btn-join btn-lg" onclick="joinPdf()">Join PDF</button>
+  </div>
+</main>
+
+<div class="container mt-4 w-100 h-100 d-flex align-items-center justify-content-center">
+  <div class="row w-100 h-100">
+    <div class="col-md-6 w-100 h-100">
+      <p class="text-center">To use this PDF Joiner:</p>
+      <div class="w-100 h-100 d-flex align-content-center justify-content-center p-4">
+        <img src="c6837c9995f83effac8b.svg" alt="" class="w-250px h-250px">
+      </div>
+      <p class="text-center">Click "Add PDF" to add files<span class="fw-bold"> One by One </span>, then click "Join PDF" to combine them.</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+<script src="https://unpkg.com/downloadjs@1.4.7"></script>
+<script src="pdfmerger.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cdRg3ibPly/X96v3SjDHNR4N9DEPq4u1f5+4k5x69Dgh8szAPQwS8A+Rpaqipjgm" crossorigin="anonymous"></script>
+
+</body>
+</html>
