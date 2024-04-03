@@ -1,2 +1,1 @@
-# scm-project
-this is scm project
+Content Added in newBranch in Local Repository
